@@ -1,0 +1,22 @@
+<h2>You have created user:</h2>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+<%= link_to "Back", new_user_path %>
+<br>
+<%= link_to "Home", controller: "users" %>
+<br>
+<%= link_to 'Edit', edit_user_path(@user) %>
+
